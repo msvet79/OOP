@@ -8,6 +8,6 @@ namespace CollectionHierarchy.Models.Interfaces
     
     public interface IAddCollection<T>
     {
-        public int Add(T element);
+        public int AddElement(T element);
     }
 }

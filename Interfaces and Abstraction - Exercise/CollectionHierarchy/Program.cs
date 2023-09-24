@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CollectionHierarchy.Core;
+using CollectionHierarchy.Core.Interfaces;
+using CollectionHierarchy.IO;
+using System;
 
 namespace CollectionHierarchy
 {
@@ -6,7 +9,11 @@ namespace CollectionHierarchy
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IReader reader = new ConsoleReader();
+            IWriter writer = new ConsoleWriter();
+
+            IEngine engine = new Engine(writer, reader);
+            engine.Run();
         }
     }
 }

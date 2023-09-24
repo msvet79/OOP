@@ -16,13 +16,21 @@ namespace CollectionHierarchy.Models
             this.addRemove = new List<T>();
         }
         
-        public T Remove(string element)
+        public virtual T Remove()
         {
             var elementRemoved = addRemove[addRemove.Count - 1];
             addRemove.RemoveAt(addRemove.Count - 1);
             return elementRemoved;
         }
 
+        public override int AddElement(T element)
+        {
+            this.addRemove.Insert(0, element);
+            return 0;
+        }
+
         public IReadOnlyCollection<T> AddRemove => (IReadOnlyCollection<T>)this.addRemove;
+
+
     }
 }

@@ -14,12 +14,14 @@ namespace CollectionHierarchy.Models
             this.addColl = new List<T>();
         }
 
-        int IAddCollection<T>.Add(T element)
+       public virtual int AddElement(T element)
         {
 
             this.addColl.Add(element);
-            return AddColl.Count - 1;
+            return addColl.Count - 1;
         }
+
+        
 
         public IReadOnlyCollection<T> AddColl => (IReadOnlyCollection<T>) addColl;
     }

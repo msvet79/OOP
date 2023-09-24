@@ -6,6 +6,6 @@ namespace CollectionHierarchy.Models.Interfaces
 {
     public interface IAddRemoveCollection<T> : IAddCollection<T>
     {
-        public T Remove(string element);
+        public T Remove();
     }
 }
