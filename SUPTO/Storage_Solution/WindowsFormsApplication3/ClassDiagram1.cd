@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Storage_Solution.AddressUpdateEventArgs" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>AddressUpdateEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.Contol_Amount_Calculation" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contol_Amount_Calculation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.Cyrilic_hex_array" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cyrilic_hex.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.Daisy_Perfect_SKL_Command" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAABACAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Daisy_Perfect_SKL_Command.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.Discount" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAEAQAAACABgATAAAYAACAEGAAAIAAgBI=</HashCode>
+      <FileName>Discount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.EGN" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EGN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.Form1" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8yGiggUJgSEpkFeTEJzQSAhaIMw7QDAm9vVvEIkg0og=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.Global_Variables" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAACAAAAAAAQAAAAAgAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Global_Variables.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.Individual" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>yCACAEEGASQAABCCJACACABSYEA4QAECEHAIYAABZwA=</HashCode>
+      <FileName>Individual.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.Item_For_Sale" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAABAAACAQAAAAAAKAQBCAAAAAAAAIGACAAAAAgIAgA=</HashCode>
+      <FileName>Item_For_Sale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.Juridical" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8CUSAAQBASEAEBOSkACACADSIEA4ABACUHAIdCEARIA=</HashCode>
+      <FileName>Juridical.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.Klen" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CiCAAAAAQCAgEBAShACACggTAEA4AAACFHAIAAEBBAA=</HashCode>
+      <FileName>Klen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.LegalUpdateEventArgs" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAEAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>LegalUpdateEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.len_calc" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>len_calc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSet" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>VgN6VMM5g41TxsbeLkTe54QMqI7K2ng4YpAosqdFRr0=</HashCode>
+      <FileName>northwindDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.PortReader" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQIAAAABgAAQgAAAAAAAQAAAAAIACIAAAAIAAEAAA=</HashCode>
+      <FileName>PortReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.Program" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.Total_amount_calculate" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Total_amount_calculate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.Total_all" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Total_amount_final.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.CustomerDemographicsTableAdapter" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+      <FileName>northwindDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.DeliveryTableAdapter" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAgAAAAAAAAABBA=</HashCode>
+      <FileName>northwindDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Order_DetailsTableAdapter" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAgAAAAAAAAABBA=</HashCode>
+      <FileName>northwindDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.SuppliersTableAdapter" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAACAcAIAAAAAAAACEICAAAAAAAAAAARBA=</HashCode>
+      <FileName>northwindDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.OrdersTableAdapter" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAgACAcAIAAAAAAAACEICAgAAAAAAAAABBA=</HashCode>
+      <FileName>northwindDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.ContactsTableAdapter" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAgAAAAIAAAABBA=</HashCode>
+      <FileName>northwindDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.CustomersTableAdapter" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEDgACAcAIAAAAAAAACEICAgAHAAIAAAARBA=</HashCode>
+      <FileName>northwindDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.ProductsTableAdapter" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAgACAcAIAAAAAAAACEICAgAEAAAAAAABBA=</HashCode>
+      <FileName>northwindDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.CategoriesTableAdapter" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.CustomerCustomerDemoTableAdapter" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.EmployeesTableAdapter" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.EmployeeTerritoriesTableAdapter" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.RegionTableAdapter" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.ShippersTableAdapter" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAACAcAIAAAAAAAACEICAAAAAAAAAAARBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.TerritoriesTableAdapter" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Alphabetical_list_of_productsTableAdapter" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Category_Sales_for_1997TableAdapter" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Current_Product_ListTableAdapter" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Customer_and_Suppliers_by_CityTableAdapter" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.InvoicesTableAdapter" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Order_Details_ExtendedTableAdapter" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Order_SubtotalsTableAdapter" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Orders_QryTableAdapter" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Product_Sales_for_1997TableAdapter" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Products_Above_Average_PriceTableAdapter" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Products_by_CategoryTableAdapter" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Quarterly_OrdersTableAdapter" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Sales_by_CategoryTableAdapter" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Sales_Totals_by_AmountTableAdapter" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Summary_of_Sales_by_QuarterTableAdapter" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Summary_of_Sales_by_YearTableAdapter" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Customers_By_CityTableAdapter" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.CustOrderHistTableAdapter" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.CustOrdersDetailTableAdapter" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.CustOrdersOrdersTableAdapter" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Employee_Sales_by_CountryTableAdapter" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Get_Customer_And_OrdersTableAdapter" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Sales_by_YearTableAdapter" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.SalesByCategoryTableAdapter" Collapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Ten_Most_Expensive_ProductsTableAdapter" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.Whole_Or_Partial_Customers_SetTableAdapter" Collapsed="true">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.ProductsUnderThisUnitPriceTableAdapter" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.QueriesTableAdapter" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACCAAAAACAAAIAAAAAAAAAAIAAAAAQAAAAAAABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.northwindDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CYAIgCCgAARBBQMBAQAAMAAhYkAKgAJgCkYAAAEkJAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.Properties.Resources" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage_Solution.Properties.Settings" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

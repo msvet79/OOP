@@ -1,0 +1,3 @@
+﻿1>------ Build started: Project: Promotions_Tashev, Configuration: Debug Any CPU ------
+1>  Promotions_Tashev -> C:\Users\Svetlio\Documents\Visual Studio 2013\Projects\Storage_Solution\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

@@ -1,0 +1,4 @@
+﻿1>------ Build started: Project: Delivery Module, Configuration: Debug Any CPU ------
+1>C:\Users\Svetlio\Documents\Visual Studio 2013\Projects\Delivery Module\Delivery Module\Form1.Designer.cs(1017,54,1017,66): warning CS0108: 'Delivery_Module.Form1.CancelButton' hides inherited member 'System.Windows.Forms.Form.CancelButton'. Use the new keyword if hiding was intended.
+1>  Delivery Module -> C:\Users\Svetlio\Documents\Visual Studio 2013\Projects\Delivery Module\Delivery Module\bin\Debug\Delivery Module.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
