@@ -16,7 +16,7 @@ namespace AccessControlSystem.Models.Contracts
         }
         public override string ToString()
         {
-            return "Finance Department";
+            return "FinanceDepartment";
         }
     }
 }

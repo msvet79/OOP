@@ -15,7 +15,7 @@ namespace AccessControlSystem.Models.Contracts
         }
         public override string ToString()
         {
-            return "IT Department";
+            return "ITDepartment";
         }
     }
 

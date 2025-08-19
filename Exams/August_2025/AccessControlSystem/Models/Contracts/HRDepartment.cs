@@ -10,12 +10,12 @@ namespace AccessControlSystem.Models.Contracts
     {
         public HRDepartment()
         {
-            MaxEmployeesCount = 3; // Example capacity, adjust as needed
-            SecurityLevel = 5; // Example security level, adjust as needed
+            MaxEmployeesCount = 5; // Example capacity, adjust as needed
+            SecurityLevel = 3; // Example security level, adjust as needed
         }
         public override string ToString()
         {
-            return "HR Department";
+            return "HRDepartment";
         }
     }
 }

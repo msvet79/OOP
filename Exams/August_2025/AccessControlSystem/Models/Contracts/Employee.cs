@@ -72,8 +72,8 @@ namespace AccessControlSystem.Models.Contracts
 
         public override string ToString()
         {
-            // Return a string representation of the employee
-            return $"{Name} with security ID {SecurityId} is assigned to {Department.GetType().Name} with security level {Department.SecurityLevel}.";
+
+            return $"Employee: {Name}, Department: {Department}, Security ID: {SecurityId}";
         }
     }
 }

@@ -12,13 +12,13 @@ namespace AccessControlSystem.Models.Contracts
     {
         private string? name;
         private int accessLevelRequired;
+        private readonly List<int> accessLog;
 
         public SecurityZone(string name, int accessLevelRequired)
         {
-    
             Name = name;
             AccessLevelRequired = accessLevelRequired;
-            AccessLog = new List<int>();
+            accessLog = new List<int>();
         }
 
         public string Name
@@ -47,7 +47,7 @@ namespace AccessControlSystem.Models.Contracts
             }
         }
 
-        public IReadOnlyCollection<int> AccessLog { get; private set; }
+        public IReadOnlyCollection<int> AccessLog => accessLog;
 
         public void LogAccessKey(int securityId)
         {
@@ -55,13 +55,11 @@ namespace AccessControlSystem.Models.Contracts
             {
                 throw new ArgumentOutOfRangeException(nameof(securityId), "Security ID must be between 100 and 999.");
             }
-            if (!AccessLog.Contains(securityId))
+            if (!accessLog.Contains(securityId))
             {
-                ((List<int>)AccessLog).Add(securityId);
+                accessLog.Add(securityId);
             }
         }
     }
-} 
-
-    
+}
 

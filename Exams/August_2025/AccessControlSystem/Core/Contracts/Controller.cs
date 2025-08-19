@@ -1,6 +1,7 @@
 ﻿using AccessControlSystem.Models.Contracts;
 using AccessControlSystem.Utilities.Messages;
 using System.Collections.Generic;
+using System.Xml.Linq;
 
 
 namespace AccessControlSystem.Core.Contracts
@@ -8,16 +9,16 @@ namespace AccessControlSystem.Core.Contracts
     internal class Controller : IController
     {
         private readonly EmployeeRepository _employees;
+        private readonly SecurityZoneRepository _securityZones;
         private IEmployee? employee;
+        private readonly Dictionary<string, IDepartment> _departments;
 
-
-        private readonly Dictionary<string,IDepartment> _departments;
         public Controller()
-
         {
             _employees = new();
-            _departments = new Dictionary<string,IDepartment>();
+            _departments = new Dictionary<string, IDepartment>();
             employee = null;
+            _securityZones = new SecurityZoneRepository();
         }
         string IController.AddDepartment(string departmentTypeName)
         {
@@ -45,7 +46,7 @@ namespace AccessControlSystem.Core.Contracts
                 {
                     _departments.Add(departmentTypeName, new FinanceDepartment());
                 }
-                
+
                 return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.DepartmentAdded, departmentTypeName);
             }
 
@@ -95,31 +96,37 @@ namespace AccessControlSystem.Core.Contracts
                 return string.Format(OutputMessages.EmployeeNotInApplication, employeeName);
             }
 
-            if (!(departmentTypeName == nameof(ITDepartment) || departmentTypeName == nameof(HRDepartment) || departmentTypeName == nameof(FinanceDepartment)))
-            {
-                return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.InvalidDepartmentType, departmentTypeName);
-            }
-
-            
-
             string? employeeTypeName = employee.GetType().Name;
-           
-            if (!(employeeTypeName == nameof(ITSpecialist) && departmentTypeName== nameof(ITDepartment)))
+
+            switch (departmentTypeName)
             {
-                return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.ContractNotAllowed, employeeName, departmentTypeName);
+                case nameof(ITDepartment):
+                    if (!(employeeTypeName == nameof(ITSpecialist)))
+                    {
+                        return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.ContractNotAllowed, employeeTypeName, departmentTypeName);
+                        
+                    }
+                    break;
+                case nameof(HRDepartment):
+                    if (!(employeeTypeName == nameof(GeneralEmployee)))
+                    {
+                        return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.ContractNotAllowed, employeeTypeName, departmentTypeName);
+                    }
+                    break;
+                case nameof(FinanceDepartment):
+                    if (!(employeeTypeName == nameof(GeneralEmployee)))
+                    {
+                        return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.ContractNotAllowed, employeeTypeName, departmentTypeName);
+                    }
+                    break;
+                default:
+                    return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.InvalidDepartmentType, departmentTypeName);
             }
 
-            if (!(employeeTypeName == nameof(GeneralEmployee) && (departmentTypeName == nameof(HRDepartment)|| departmentTypeName == nameof(FinanceDepartment))))
-            {
-               
-                
-                return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.ContractNotAllowed, employeeName, departmentTypeName);
-                
-            }
-           
-            IDepartment? department = _departments.TryGetValue(departmentTypeName, out var dept) ? dept : null;
 
-            if (department == null)
+            IDepartment? department = _departments.TryGetValue(departmentTypeName, out department) ? department : null;
+
+            if (department is null)
             {
                 return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.DepartmentIsNotAvailable, departmentTypeName);
             }
@@ -128,37 +135,91 @@ namespace AccessControlSystem.Core.Contracts
 
 
             if (_departments.Any(e => e.Value.Employees.Contains(employeeName)))
-                {
-                    return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.EmployeeExistsInDepartment, employeeName);
-                }
-            
+            {
+                return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.EmployeeExistsInDepartment, employeeName);
+            }
+
             if (department.MaxEmployeesCount <= department.Employees.Count)
             {
                 return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.DepartmentFull, departmentTypeName);
             }
 
-        
-            employee.AssignToDepartment(departmentTypeName);
-            return "Employee added to department successfully.";
+            department.ContractEmployee(employeeName);
+            employee.AssignToDepartment(department);
+            return string.Format(OutputMessages.EmployeeAddedToDepartment, employeeTypeName, departmentTypeName);
         }
 
-          
-        
+
+
 
 
         string IController.AddSecurityZone(string securityZoneName, int accessLevelRequired)
         {
-            throw new NotImplementedException();
+
+
+
+            if (_securityZones.GetByName(securityZoneName) != null)
+            {
+                return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.SecurityZoneExists, securityZoneName);
+            }
+            _securityZones.AddNew(new SecurityZone(securityZoneName, accessLevelRequired));
+
+            // Return a success message
+            return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.SecurityZoneAdded, securityZoneName);
         }
 
         string IController.AuthorizeAccess(string securityZoneName, string employeeName)
         {
-            throw new NotImplementedException();
+            var securityZone = _securityZones.GetByName(securityZoneName);
+            if (securityZone == null)
+            {
+                return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.SecurityZoneNotFound, securityZoneName);
+            }
+
+            var employee = _employees.GetByName(employeeName);
+
+            if (employee == null)
+            {
+                return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.EmployeeNotInApplication, employeeName);
+            }
+
+            if (employee.Department is null || employee.Department.SecurityLevel < securityZone.AccessLevelRequired)
+            {
+                return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.AccessDenied, employeeName, securityZoneName);
+            }
+
+            if (securityZone.AccessLog.Contains(employee.SecurityId))
+            {
+                return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.EmployeeAlreadyAuthorized, employeeName, securityZoneName);
+            }
+
+            securityZone.LogAccessKey(employee.SecurityId);
+            return string.Format(System.Globalization.CultureInfo.InvariantCulture, OutputMessages.EmployeeAuthorized, employeeName, securityZoneName);
         }
+
 
         string IController.SecurityReport()
         {
-            throw new NotImplementedException();
+            System.Text.StringBuilder stringBuilderReport = new();
+            stringBuilderReport.AppendLine("Security Report:");
+
+            foreach (ISecurityZone securityZone in _securityZones.Models.OrderByDescending(sz => sz.AccessLevelRequired).ThenBy(sz => sz.Name))
+            {
+                _ = stringBuilderReport.AppendLine($"-{securityZone.Name} (Access level required: {securityZone.AccessLevelRequired})");
+
+                foreach (int securityId in securityZone.AccessLog)
+                {
+                    IEmployee? employee = _employees.Models.FirstOrDefault(e => e.SecurityId == securityId);
+                    if (employee != null)
+                    {
+                        _ = stringBuilderReport.AppendLine($"--" + employee.ToString());
+                    }
+                }
+            }
+
+            return stringBuilderReport.ToString();
         }
     }
 }
+
+
